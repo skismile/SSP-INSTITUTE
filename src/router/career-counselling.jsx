@@ -1,9 +1,11 @@
 import { Box,Text,Image,Grid,SimpleGrid, Heading} from "@chakra-ui/react";
-
+const headImg={
+    base:'200px',sm:"200px",md:'300px',lg:'400px',xl:'400px'
+   }
 export default function CareerCounselling(){
 
     return <Box w={'70%'} m='auto' >
-    <Box  h={'500px'}  ><Image w='100%' h="100%" src='/career-counselling.jpeg'/></Box>
+    <Box  h={headImg}  ><Image w='100%' h="100%" src='/career-counselling.jpeg'/></Box>
     <br /><br /><br /><br />
    
     <Text>BFSI stands for the Banking, Financial Services, and Insurance sector. Fundamentally, it represents a major portion of the multi-billion dollar Indian economy comprising all Banking, Insurance, and Non-Banking Financial Institutions. The latter is known as the NBFCs. Also, the BFSI industry largely refers to financial service firms such as Broking, and Asset Management.</Text>

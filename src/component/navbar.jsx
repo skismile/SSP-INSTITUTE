@@ -2,29 +2,48 @@ import {Button, Box,Stack, Flex, SimpleGrid,Image,Text, MenuButton, MenuList, Me
 import {ChevronDownIcon} from "@chakra-ui/icons"
 import {Link} from 'react-router-dom'
 export default function Navbar(){
-
+const navBtn={base:'100%',
+ sm:'100%',
+ md:'50%',
+ lg:'70%',
+xl:'70%'
+}
 return <Box  borderBottom={'1px solid gray'} >
   
 
 
-<Flex w={'100%'} border='10px solid red' alignItems={'end'} >
-<Box w={'15%'}   >  <Image w={'100%'} h='100%' src="/ssp-logo.png"  />  </Box>
+<Flex w={'100%'}   gap={'5px'}  alignItems={'end'} >
+<Box w={'15%'} h={{base:'200px'}}  >  <Image w={'100%'} h='100%'  src="/ssp-logo.png"  />  </Box>
 <Box w={'60%'}   >
 
 {/* ////////////////ssp heading */}
 
-<Text fontSize={'20px'} color={'#007f7f'}  >SSP SKILL DEVELOPMENT TRAINING INSTITUTE</Text>
+<Text fontSize={{base:"sm",sm:'sm',md:"xl",lg:'xl' ,xl:'2xl'}} color={'#007f7f'}  >SSP SKILL DEVELOPMENT TRAINING INSTITUTE</Text>
 
 {/* ////////////drop down */}
-<Stack className="navButton" borderTop={'1px solid gray'} w='100%' p='1%' backgroundColor={'rgb(188, 242, 242)'} direction='row' justifyContent='space-between' >
+<SimpleGrid  columns={{
+  base:1,
+  sm:1,
+  md:2,
+  lg:3  ,
+  xl:4
 
-<Link to='/'><Button  bg="teal" color={'white'} _hover={{backgroundColor:'green'}} as={Button} >
-HOME
+}} 
+spacing="10px"
+ borderTop={'1px solid gray'} 
+// border={'1px solid red'}
+  p='1%' backgroundColor={'rgb(188, 242, 242)'} >
+
+
+<Link to='/'><Button  w={navBtn} bg="teal" color={'white'} _hover={{backgroundColor:'green'}}  >
+ <p>
+ HOME
+</p>
   </Button></Link>
 
 
 <Menu>
-  <MenuButton   bg="teal" color={'white'} _hover={{backgroundColor:'green'}} as={Button} rightIcon={<ChevronDownIcon/>}>
+  <MenuButton w={navBtn}  bg="teal" color={'white'} _hover={{backgroundColor:'green'}} as={Button} >
   PROGRAMS
   </MenuButton>
   <MenuList color={'white'} bg={'#007f7f'}  >
@@ -34,34 +53,36 @@ HOME
 </Menu>
 
 <Link to='/aboutus' >
-  <Button   as={Button} bg="teal" color={'white'} _hover={{backgroundColor:'green'}} >
+  <Button  w={navBtn} bg="teal" color={'white'} _hover={{backgroundColor:'green'}} >
 ABOUT US
   </Button>
 </Link>
 
 
-  <Link to='/contact'  ><Button  bg="teal" color={'white'} _hover={{backgroundColor:'green'}} >
+  <Link to='/contact'  ><Button w={navBtn}  bg="teal" color={'white'} _hover={{backgroundColor:'green'}} >
 CONTACT
   </Button></Link>
 
 
-  <Link to='/hire' ><Button  bg="teal" color={'white'} _hover={{backgroundColor:'green'}}  >
+  <Link to='/hire' >
+    <Button w={navBtn}   bg="teal" color={'white'}  _hover={{backgroundColor:'green'}}  >
 HIRE FROM US
-  </Button></Link>
+  </Button>
+  </Link>
 
 
 
 
-</Stack>
+</SimpleGrid>
 
 </Box>
 
 {/* //////////////////////right div */}
 <Box w={'25%'}  >
-    <Text fontSize={'xl'} ><b>Have questions?</b></Text>
+    <Text fontSize={{base:"sm",sm:'sm',lg:'xl'}} ><b>Have questions?</b></Text>
     <Text color={'#007f7f'} > <b>  Call us today: 7699442259 </b> </Text>
-    <Text fontSize={'xl'}><b>DROP MAIL:</b> </Text>
-    <Text color={'#007f7f'} fontSize={'xl'}><b> SSPTRAININGINSTITUTE@GMAIL.COM</b></Text>
+    <Text  fontSize={{base:"sm",sm:'sm',lg:'xl'}}><b>DROP MAIL:</b> </Text>
+    <Text color={'#007f7f'} fontSize={{base:"sm",sm:'sm',lg:'xl'}}><b> SSPTRAININGINSTITUTE@GMAIL.COM</b></Text>
 </Box>
 
 

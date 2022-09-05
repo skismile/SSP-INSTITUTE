@@ -1,11 +1,13 @@
 
 import {Box,Text,Image,Grid,SimpleGrid, Heading} from '@chakra-ui/react'
-
+const headImg={
+    base:'200px',sm:"200px",md:'300px',lg:'400px',xl:'400px'
+   }
 export default function LifeCoach(){
 
 
 return <Box w={'70%'} m='auto' >
-<Box textAlign={'left'} h={'500px'}  ><Image w='100%' h="100%" src='/lifecoachPageimage.jpeg'/></Box>
+<Box textAlign={'left'} h={headImg}  ><Image w='100%' h="100%" src='/lifecoachPageimage.jpeg'/></Box>
 <br /><br />
 <Heading>Career Path in BFSI Sector</Heading>
 <Text>The Banking & Financial Services sector is one of India’s most dynamic industries where there is a huge demand for well-trained managers. Ambitious Post Graduate Diploma holders can earn salaries up to Rs. 1 Crore per annum within 10-12 years.</Text>

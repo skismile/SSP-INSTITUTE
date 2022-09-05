@@ -4,18 +4,41 @@ import {Link} from 'react-router-dom'
 export default function Footer(){
 
 return <Box mt borderTop={'1px solid gray'} w={'70%'}     m='auto'  >
-
+<marquee behavior="" direction=""   >
+    <Text   w='50%'  color={'green'} fontWeight='bold' >
+    To Build Your Website Contact : 7001727360 
+    -- mail : sk.ismile75@gmail.com
+    </Text>
+    </marquee>
 <Flex p={'30px'} gap={'20px'}  >
 
-<Box  w='50%' h='150px' borderRight={'1px solid gray'} >
+<Box  w='50%' borderRight={'1px solid gray'} fontSize={{
+    base:'10px',
+    sm:'10px',
+    md:'15px',
+    lg:'20px',
+    xl:'20px',
+}}  >
 <Text>Have questions? Call us today:</Text>
 <Text>DROP MAIL : </Text>
 <Text> <b> SSPTRAININGINSTITUTE@GMAIL.COM</b></Text>
 </Box>
 
-<Flex   w='50%' gap={'50px'} fontSize='50px' >
-<a href='https://www.facebook.com/profile.php?id=100083238667078' ><i className="fa-brands fa-facebook"></i></a>
-<Text fontSize={'20px'} >JOIN US ON FACEBOOK</Text>
+<Flex   w='50%' gap={'15px'} fontSize={{
+    base:'30px',
+    sm:'30px',
+    md:'30px',
+    lg:'40px',
+    xl:'40px',
+}} color='blue' >
+<a  target={"_blank"} href='https://www.facebook.com/profile.php?id=100083238667078' ><i className="fa-brands fa-facebook"></i></a>
+<Text color={'black'} fontSize={{
+    base:'20px',
+    sm:'20px',
+    md:'20px',
+    lg:'20px',
+    xl:'30px',
+}} >JOIN US ON FACEBOOK</Text>
 
 </Flex>
 
@@ -25,6 +48,7 @@ return <Box mt borderTop={'1px solid gray'} w={'70%'}     m='auto'  >
 
 
 </Flex>
+
 <Text textAlign={'center'} fontWeight='bold' fontSize={'20px'} >ISO  9001 : 2015  Certified
 Institute</Text>
 

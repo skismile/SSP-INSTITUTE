@@ -10,6 +10,8 @@ function App() {
   return (
     <div className="App">
    <Navbar/>
+   <br/>
+   <br/>
       <AllRoutes/>
       {/* <LifeCoach/> */}
       <Footer/>

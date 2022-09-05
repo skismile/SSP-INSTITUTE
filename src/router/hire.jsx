@@ -6,17 +6,17 @@ export default function Hire(){
 return <Box w='70%' p={'30px 0px 30px 0px '} m='auto' >
 
 <Flex justifyContent={'space-between'} >
-    <Box   w='30%'  > <Text>Addtess : AT-MIDNAPORE STATION ROAD,NEAR WATER TANK,PASCHIM MEDINIPUR,WEST BENGAL,PIN-721101</Text><br />
+    <Box   w='30%' color={'#007f7f'} > <Text>Address : AT-MIDNAPORE STATION ROAD,NEAR WATER TANK,PASCHIM MEDINIPUR,WEST BENGAL,PIN-721101</Text><br />
     <Text>TEL : 7699442259</Text><br />
     <Text>EMAIL: SSPTRAININGINSTITUTE@GMAIL.COM</Text></Box>
     
     
-    <Stack p={'20px'}  w='60%' boxShadow={'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'} bg='white'   >
+    <Stack p='5px' w='60%' boxShadow={'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'} bg='white'   >
    
     <form  action="https://formspree.io/f/mqkjajnd"
   method="POST"  >  
   <FormLabel  color={'#007f7f'} fontSize='2xl' >Learn more about hiring</FormLabel>
-  <Input value='HIRE-DEPARTMENT' autoComplete="off" readOnly  name='subject'  type='text' placeholder="enter subject"  /><br /> <br />
+  <Input value='HIRE-DEPARTMENT' bg='teal' color={'white'} autoComplete="off" readOnly  name='subject'  type='text' placeholder="enter subject"  /><br /> <br />
   <Input autoComplete="off" required  name='name'  type='text' placeholder="enter name"  /><br /><br />
   <Input autoComplete="off" required name='email'  type='email' placeholder="enter email" /><br /><br />
   <Input autoComplete="off" required name='phone number' type='number' placeholder="enter phone number" /><br /><br />
