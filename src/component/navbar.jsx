@@ -62,7 +62,7 @@ w={{
   base:'40%',
   sm:'40%',
   md:'50%',
-lg:'60%',
+lg:'70%',
 xl:'60%',
 }}
 >
@@ -76,8 +76,8 @@ xl:'60%',
   base:1,
   sm:1,
   md:2,
-  lg:3  ,
-  xl:4
+  lg:4  ,
+  xl:5
 
 }} 
 spacing="10px"
@@ -130,13 +130,13 @@ HIRE FROM US
 
 {/* //////////////////////right div */}
 <Box w={'25%'}  >
-  <Text color={'#007f7f'} fontSize={{base:"sm",sm:'sm',lg:'xl'}} ><b> Date : {today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear()}</b></Text>
+  <Text color={'#007f7f'} fontSize={{base:"10px",sm:'sm',lg:'xl'}} ><b> Date : {today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear()}</b></Text>
     
     
-    <Text fontSize={{base:"sm",sm:'sm',lg:'xl'}} ><b>Have questions?</b></Text>
-    <Text color={'#007f7f'} style={clr[i]} > <b>  Call us today: 7699442259 </b> </Text>
-    <Text  fontSize={{base:"sm",sm:'sm',lg:'xl'}}><b>DROP MAIL:</b> </Text>
-    <Text color={'#007f7f'} fontSize={{base:"sm",sm:'sm',lg:'xl'}}><b> SSPTRAININGINSTITUTE@GMAIL.COM</b></Text>
+    <Text fontSize={{base:"10px",sm:'sm',lg:'xl'}} ><b>Have questions?</b></Text>
+    <Text fontSize={{base:"10px",sm:'sm',lg:'xl'}} color={'#007f7f'} style={clr[i]} > <b>  Call us today: 7699442259 </b> </Text>
+    <Text  fontSize={{base:"10px",sm:'sm',lg:'xl'}}><b>DROP MAIL:</b> </Text>
+    <Text  color={'#007f7f'} fontSize={{base:"10px",sm:'sm',lg:'xl'}}><b> SSPTRAININGINSTITUTE@GMAIL.COM</b></Text>
 </Box>
 
 

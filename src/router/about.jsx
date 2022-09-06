@@ -49,7 +49,7 @@ Institute</b></Text>
 
 <br /><br /><br />
 <Box h={headImg} >
-<Image w={'100px'} w='100%' h="100%"   src='https://i.gifer.com/7yAb.gif'/>
+<Image  w='100%' h="100%"   src='https://i.gifer.com/7yAb.gif'/>
 </Box>
 <br /><br /><br />
 <Box h={headImg} >
