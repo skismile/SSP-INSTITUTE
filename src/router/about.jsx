@@ -1,11 +1,16 @@
 import {  Box,Text,Image,Grid,SimpleGrid, Heading,Flex } from "@chakra-ui/react";
+import { useEffect } from "react";
 
 const headImg={
     base:'200px',sm:"200px",md:'300px',lg:'400px',xl:'400px'
    }
 
 export default function AboutUs(){
+useEffect(()=>{
 
+    window.document.title='About'
+
+})
 
 return <Box p={'30px'} w={'70%'} m='auto' >
 <br /><br />
@@ -42,6 +47,10 @@ Institute</b></Text>
     </Box>
 </Flex>
 
+<br /><br /><br />
+<Box h={headImg} >
+<Image w={'100px'} w='100%' h="100%"   src='https://i.gifer.com/7yAb.gif'/>
+</Box>
 <br /><br /><br />
 <Box h={headImg} >
    
