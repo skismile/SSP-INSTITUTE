@@ -35,7 +35,7 @@ return <Box w='70%' m='auto' p='50px 0px 50px 0px' >
 <form  action="https://formspree.io/f/xeqdegrd"
 // ssp paswd---> Ssp@2022
   method="POST" >
-    <FormLabel   color={'#007f7f'} fontSize={{base:"10px",sm:'15px',md:'30px',lg:'2xl',xl:'2xl'}} >Learn more about us</FormLabel>
+    <FormLabel   color={'#007f7f'} fontSize={{base:"10px",sm:'15px',md:'30px',lg:'2xl',xl:'2xl'}} >APPLICATION FORM</FormLabel>
     <Input value={'JOB-SEEKER'+"  "+NAME} bg='teal' color={'white'} fontWeight={'bold'}  readOnly  name='subject' required autoComplete="off"  placeholder="enter subject" /> <br /><br />
     <Input fontSize={{base:"10px",sm:'sm',lg:'xl'}} onChange={(e)=>setName(e.target.value)} type="text" name='name' required autoComplete="off"  placeholder="enter your name" /><br /><br />
     <Input fontSize={{base:"10px",sm:'sm',lg:'xl'}} type="email" name='email'  required autoComplete="off" placeholder="enter your email"/><br /><br />
