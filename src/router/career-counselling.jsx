@@ -1,9 +1,14 @@
 import { Box,Text,Image,Grid,SimpleGrid, Heading} from "@chakra-ui/react";
+import { useEffect } from "react";
 const headImg={
     base:'200px',sm:"200px",md:'300px',lg:'400px',xl:'400px'
    }
 export default function CareerCounselling(){
+    useEffect(()=>{
 
+        window.document.title='CareerCouncilling Page'
+    
+    })
     return <Box w={'70%'} m='auto' >
     <Box  h={headImg}  ><Image w='100%' h="100%" src='/career-counselling.jpeg'/></Box>
     <br /><br /><br /><br />

@@ -1,10 +1,15 @@
 
 import {Box,Text,Image,Grid,SimpleGrid, Heading} from '@chakra-ui/react'
+import { useEffect } from 'react'
 const headImg={
     base:'200px',sm:"200px",md:'300px',lg:'400px',xl:'400px'
    }
 export default function LifeCoach(){
+    useEffect(()=>{
 
+        window.document.title='Life Coach Page'
+    
+    })
 
 return <Box w={'70%'} m='auto' >
 <Box textAlign={'left'} h={headImg}  ><Image w='100%' h="100%" src='/lifecoachPageimage.jpeg'/></Box>

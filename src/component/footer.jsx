@@ -33,7 +33,7 @@ return <Box mt borderTop={'1px solid gray'} w={'70%'}     m='auto'  >
 }} color='blue' >
 <a  target={"_blank"} href='https://www.facebook.com/profile.php?id=100083238667078' ><i className="fa-brands fa-facebook"></i></a>
 <Text color={'black'} fontSize={{
-    base:'20px',
+    base:'10px',
     sm:'20px',
     md:'20px',
     lg:'20px',

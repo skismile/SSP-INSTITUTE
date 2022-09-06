@@ -11,7 +11,7 @@ if(num==3)
 }
 useEffect(()=>{
 
-   
+   window.document.title="Home Page"
     setInterval(
     ()=>{
  

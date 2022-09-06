@@ -1,7 +1,20 @@
-import { Box,SimpleGrid,Text,Flex, FormControl, FormLabel, FormHelperText,Input, Stack } from "@chakra-ui/react";
-
+import { useToast,Box,SimpleGrid,Text,Flex, FormControl, FormLabel, FormHelperText,Input, Stack } from "@chakra-ui/react";
+import { useEffect } from "react";
 export default function Hire(){
+  const toast = useToast()
+  useEffect(()=>{
 
+    window.document.title='Hire Page'
+    toast({
+      title: 'Hi Hr !',
+      description: "Please Fill the form.",
+      status: 'info',
+      duration: 9000,
+      isClosable: true,
+      position:"top"
+    })
+
+})
 
 return <Box w='70%' p={'30px 0px 30px 0px '} m='auto' >
 
@@ -13,7 +26,8 @@ return <Box w='70%' p={'30px 0px 30px 0px '} m='auto' >
     
     <Stack p='5px' w='60%' boxShadow={'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'} bg='white'   >
    
-    <form  action="https://formspree.io/f/mqkjajnd"
+    <form   action="https://formspree.io/f/xeqdegrd"
+    // skismile--> action="https://formspree.io/f/mqkjajnd"
   method="POST"  >  
   <FormLabel  color={'#007f7f'} fontSize='2xl' >Learn more about hiring</FormLabel>
   <Input value='HIRE-DEPARTMENT' bg='teal' color={'white'} autoComplete="off" readOnly  name='subject'  type='text' placeholder="enter subject"  /><br /> <br />
