@@ -12,7 +12,7 @@ useEffect(()=> {
     toast({
       title: 'Hi Candidate !',
       description: "Please Fill the form.",
-      status: 'info',
+      status: 'info', 
       duration: 9000,
       isClosable: true,
       position:"top"
