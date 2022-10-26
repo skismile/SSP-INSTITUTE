@@ -59,7 +59,11 @@ Institute</b></Text>
 <br /> <br /> <br /> <br />
 
 
-<SimpleGrid w={
+
+
+{/*director info*/}
+
+{/* <SimpleGrid w={
     {
         base:'120%',
         sm:'120%',
@@ -145,7 +149,7 @@ Institute</b></Text>
     
     
     
-</SimpleGrid>
+</SimpleGrid> */}
 
 </Box>
 

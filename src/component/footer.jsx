@@ -4,12 +4,13 @@ import {Link} from 'react-router-dom'
 export default function Footer(){
 
 return <Box mt borderTop={'1px solid gray'} w={'70%'}     m='auto'  >
-<marquee behavior="" direction=""   >
+    {/* devloper add */}
+{/* <marquee behavior="" direction=""   >
     <Text   w='50%'  color={'green'} fontWeight='bold' >
     To Build Your Website Contact Our Devloper Mr. Sk Ismile,  Call: 7001727360 
     or Mail : sk.ismile75@gmail.com
     </Text>
-    </marquee>
+    </marquee> */}
 <Flex p={'30px'} gap={'20px'}  >
 
 <Box  w='50%' borderRight={'1px solid gray'} fontSize={{
